@@ -1,0 +1,23 @@
+<view class="search-box">
+  <view class="search-l">
+	  <text>城市</text>
+    <view class="search-triangle"></view>
+    <input class="search-input" type="text" placeholder="想住哪儿?"/>
+  </view>
+	<view class="search-r">
+    <image src="../../public/image/look.png" />
+  </view>
+</view>
+<view class="swipper-box">
+	轮播图
+</view>
+<view class="menu-box">
+	菜单栏
+</view>
+<view class="good-house-box">
+	精选房源
+</view>
+<view wx:for="{{houseList}}" wx:key="index" class="house-item-box">
+	推荐房源{{index + 1 }}
+</view>
+
